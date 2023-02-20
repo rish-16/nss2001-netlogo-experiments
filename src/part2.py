@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 T = 250
-df = pd.DataFrame(pd.read_csv("../data/global-temperature-5Buildings.csv")).values.tolist()[T:]
+df = pd.DataFrame(pd.read_csv("../data/temperature-5Buildings.csv")).values.tolist()[T:]
 
 air_temp = np.array([r[1] for r in df])
 ground_temp = np.array([r[2] for r in df])
